@@ -5,7 +5,6 @@ class Block {
   //PVector BBraking;
   PVector BVelocity;
   PVector BPos;
-  ArrayList<PVector> tail = new ArrayList<PVector>();
   Block(float x, float y) {
     Bx=x;
     By=y;
@@ -34,6 +33,6 @@ class Block {
     
     BVelocity = new PVector(xspeed, yspeed);
     BPos.add(BVelocity);
-    //handleEdges();
+
   }
 }
